@@ -19,7 +19,7 @@ describe('Funcionalidade Cadastro', () => {
   })
   
   it('Validar apagar usuario', () => {
-     cy.visit('http://aprendendotestar.com.br/treinar-automacao.php')
+    cy.visit('http://aprendendotestar.com.br/treinar-automacao.php')
     cy.get('tbody > :nth-child(2) > :nth-child(2)').should('have.text', 'vinny')
     cy.get(':nth-child(2) > :nth-child(5) > a').click()
     cy.visit('http://aprendendotestar.com.br/treinar-automacao.php')
